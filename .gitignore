@@ -1,72 +1,41 @@
-# Ignore system files
+# Python bytecode and cache
 __pycache__/
-.ipynb_checkpoints/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-
-# pth files
 *.pth
+*.egg-info/
 
-# zips
-*.zip
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
-# ply files
-*.ply
-
-# Ignore Python virtual environments
+# Python virtual environments
 venv/
-.env
-.env.local
-.env.development.local
-.env.test.local
+.env*
+.vscode/
 
-# Ignore data and large folders
+# Build, dist, and other dev output
+build/
+dist/
+*.log
+
+# Archives and compressed
+*.zip
+*.tar
+*.tar.gz
+
+# Data and large output folders
 Data/
 GSIR/
 pano/
 panogs/
-360monodepth/data/
-360monodepth/_instaOmniDepth+output
-360monodepth/BoostingMonocularDepth
-360monodepth/midas
-360monodepth/.gitmodules
-360monodepth/Dockerfile
-360monodepth/README.md
-360monodepth/imgs/
 
-
+# Exscene
 Exscene/scene/
 Exscene/runs/
+Exscene/iframe_figures/
 
-
-3DGS/gaussian-splatting/output/
-3DGS/gaussian-splatting/runs/
-3DGS/gaussian-splatting/SIBR_viwers
-3DGS/gaussian-splatting/.gitignore
-3DGS/gaussian-splatting/.gitmodules
-3DGS/gaussian-splatting/README.md
-3DGS/gaussian-splatting/submodules/
-3DGS/gaussian-splatting/requirements.txt
-
-*.pyc
-.vscode
-3DGS/gaussian-splatting/output
-3DGS/gaussian-splatting/build
-3DGS/gaussian-splatting/diff_rasterization/diff_rast.egg-info
-3DGS/gaussian-splatting/diff_rasterization/dist
-3DGS/gaussian-splatting/tensorboard_3d
-3DGS/gaussian-splatting/screenshots
-
-
-Exscene/iframe_figures
-
-
-# html files
-*.html
-
-
-# Ignore specific large or generated files
+# Ignore large media
 *.png
 *.jpg
 *.jpeg
@@ -77,13 +46,37 @@ Exscene/iframe_figures
 *.avi
 *.mov
 *.mkv
-*.zip
-*.tar
-*.tar.gz
+
+# Model files and checkpoints
 *.h5
 *.pt
 *.ckpt
-*.pth
+*.onnx
 
-# VSCode settings (optional, if using local .vscode folder)
-.vscode/
+# 360monodepth cleanup
+360monodepth/data/
+360monodepth/_instaOmniDepth+output/
+360monodepth/BoostingMonocularDepth/
+360monodepth/midas/
+360monodepth/imgs/
+360monodepth/Dockerfile
+360monodepth/README.md
+360monodepth/.gitmodules
+
+# 3DGS cleanup
+3DGS/gaussian-splatting/output/
+3DGS/gaussian-splatting/runs/
+3DGS/gaussian-splatting/screenshots/
+3DGS/gaussian-splatting/build/
+3DGS/gaussian-splatting/tensorboard_3d/
+3DGS/gaussian-splatting/diff_rasterization/dist/
+3DGS/gaussian-splatting/diff_rasterization/diff_rast.egg-info/
+3DGS/gaussian-splatting/submodules/
+3DGS/gaussian-splatting/.gitignore
+3DGS/gaussian-splatting/.gitmodules
+3DGS/gaussian-splatting/README.md
+3DGS/gaussian-splatting/requirements.txt
+3DGS/gaussian-splatting/SIBR_viewers/
+
+# Ignore HTML files
+*.html
