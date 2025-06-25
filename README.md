@@ -16,6 +16,13 @@ This project aims to reconstruct a scene in 3D directly from a monocular 360-deg
 * Synthesizing novel camera views for training
 * Training a Gaussian Splatting model for high-fidelity radiance field rendering
 
+This pipeline is inspired by the ExScene paper, which explores scene editing and rendering using Gaussian primitives.<br>
+<sub>(There is no code implementation of ExScene yet, but the paper provides a conceptual framework.)</sub>
+
+<p align="center">
+    <img src="ReadmeImages/exscene_pipeline.png" alt="ExScene Pipeline" width="500"/>
+</p>
+
 The pipeline is modular and serves as a foundation for tasks such as:
 
 * Inverse rendering from panoramas
@@ -31,7 +38,7 @@ The pipeline is modular and serves as a foundation for tasks such as:
 * Uses MonoDepth360 to estimate depth from an equirectangular image.
 * Result: `depth.png`, which is backprojected to a 3D point cloud.
 
-<img src="ReadmeImages/360monodepth.png" alt="MonoDepth360 Result" width="400"/>
+<img src="ReadmeImages/360monodepth.png" alt="MonoDepth360 Result" width="500"/>
 
 <table>
     <tr>
