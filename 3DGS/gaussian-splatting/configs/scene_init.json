@@ -1,0 +1,11 @@
+{
+  "initial_checkpoint": "Exscene/runs/initial/ckpt.pth",
+  "repair_frames": "Exscene/runs/initial/patches/*.png",
+  "poses_json": "Exscene/runs/initial/renders/poses.json",
+  "output_dir": "Exscene/runs/final",
+  "training": {
+    "lr": 5e-3,
+    "iterations": 10000,
+    "batch_size": 4096
+  }
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fopenmp -O3 -DNDEBUG -shared  -o ../lib/EigenSolvers.cpython-38-x86_64-linux-gnu.so CMakeFiles/EigenSolvers.dir/src/EigenSolvers.cpp.o   -L/home/workbench/anaconda3/envs/mono360/lib/libpython3.8.so  -Wl,-rpath,/home/workbench/anaconda3/envs/mono360/lib/libpython3.8.so -flto -lglog 

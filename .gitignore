@@ -1,0 +1,89 @@
+# Ignore system files
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+
+# pth files
+*.pth
+
+# zips
+*.zip
+
+# ply files
+*.ply
+
+# Ignore Python virtual environments
+venv/
+.env
+.env.local
+.env.development.local
+.env.test.local
+
+# Ignore data and large folders
+Data/
+GSIR/
+pano/
+panogs/
+360monodepth/data/
+360monodepth/_instaOmniDepth+output
+360monodepth/BoostingMonocularDepth
+360monodepth/midas
+360monodepth/.gitmodules
+360monodepth/Dockerfile
+360monodepth/README.md
+360monodepth/imgs/
+
+
+Exscene/scene/
+Exscene/runs/
+
+
+3DGS/gaussian-splatting/output/
+3DGS/gaussian-splatting/runs/
+3DGS/gaussian-splatting/SIBR_viwers
+3DGS/gaussian-splatting/.gitignore
+3DGS/gaussian-splatting/.gitmodules
+3DGS/gaussian-splatting/README.md
+3DGS/gaussian-splatting/submodules/
+3DGS/gaussian-splatting/requirements.txt
+
+*.pyc
+.vscode
+3DGS/gaussian-splatting/output
+3DGS/gaussian-splatting/build
+3DGS/gaussian-splatting/diff_rasterization/diff_rast.egg-info
+3DGS/gaussian-splatting/diff_rasterization/dist
+3DGS/gaussian-splatting/tensorboard_3d
+3DGS/gaussian-splatting/screenshots
+
+
+Exscene/iframe_figures
+
+
+# html files
+*.html
+
+
+# Ignore specific large or generated files
+*.png
+*.jpg
+*.jpeg
+*.tiff
+*.bmp
+*.gif
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.tar
+*.tar.gz
+*.h5
+*.pt
+*.ckpt
+*.pth
+
+# VSCode settings (optional, if using local .vscode folder)
+.vscode/
