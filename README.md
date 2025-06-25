@@ -31,7 +31,7 @@ The pipeline is modular and serves as a foundation for tasks such as:
 * Uses MonoDepth360 to estimate depth from an equirectangular image.
 * Result: `depth.png`, which is backprojected to a 3D point cloud.
 
-<img src="ReadmeImages/360monodepth.png" alt="MonoDepth360 Result" width="600"/>
+<img src="ReadmeImages/360monodepth.png" alt="MonoDepth360 Result" width="400"/>
 
 <table>
     <tr>
