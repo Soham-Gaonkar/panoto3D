@@ -88,8 +88,12 @@ The pipeline is modular and serves as a foundation for tasks such as:
 
 <table>
     <tr>
-        <td align="center"><b>View</b><br><img src="ReadmeImages/003.png" width="320"/></td>
-        <td align="center"><b>Depth</b><br><img src="ReadmeImages/003_depth.png" width="320"/></td>
+        <td align="center"><b>View (Flipped 180°)</b><br>
+            <img src="ReadmeImages/003.png" width="320" style="transform: rotate(180deg);"/>
+        </td>
+        <td align="center"><b>Depth (Flipped 180°)</b><br>
+            <img src="ReadmeImages/003_depth.png" width="320" style="transform: rotate(180deg);"/>
+        </td>
     </tr>
 </table>
 
