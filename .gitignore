@@ -34,6 +34,8 @@ panogs/
 Exscene/scene/
 Exscene/runs/
 Exscene/iframe_figures/
+Exscene/scene_init/images
+Exscene/scene_init/depth
 
 # Ignore large media
 
