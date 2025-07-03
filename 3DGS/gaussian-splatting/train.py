@@ -47,10 +47,29 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
 
     first_iter = 0
     tb_writer = prepare_output_and_logger(dataset)
+
+    # print dataset information
+    print(f"Dataset: {dataset.source_path}")
+    print(f"SH Degree: {dataset.sh_degree}")
+    print(f"Optimizer Type: {opt.optimizer_type}")
+    print(f"Iterations: {opt.iterations}")
+    print(f"Testing iterations: {testing_iterations}")
+    print(f"Saving iterations: {saving_iterations}")
+    print(f"Checkpoint iterations: {checkpoint_iterations}")
+
     if args.init_3dgs_json:
         gaussians = GaussianModel.load_from_json(args.init_3dgs_json)
     else:
         gaussians = GaussianModel(dataset.sh_degree, opt.optimizer_type)
+
+    # print number of points initialized
+    if gaussians.get_xyz is not None:
+        print(f"Initialized with {gaussians.get_xyz.shape[0]} points from 3DGS JSON file.")
+
+    # print initial opacity and sh
+    if gaussians.get_opacity is not None:
+        print(f"Initial opacity: {gaussians.get_opacity.mean().item()}")
+ 
 
     # gaussians = GaussianModel(dataset.sh_degree, opt.optimizer_type)
     scene = Scene(dataset, gaussians)
@@ -98,6 +117,8 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
         # Every 1000 its we increase the levels of SH up to a maximum degree
         if iteration % 1000 == 0:
             gaussians.oneupSHdegree()
+            # print number of gassians
+            print(f"[{iteration}] Num Gaussians: {gaussians.get_xyz.shape[0]}Opacity: {gaussians.get_opacity.mean().item()}")
 
         # Pick a random Camera
         if not viewpoint_stack:
