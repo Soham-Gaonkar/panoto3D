@@ -14,7 +14,7 @@ This project aims to reconstruct a scene in 3D directly from a monocular 360-deg
 * Backprojecting to a point cloud
 * Converting each point into a 3D Gaussian representation
 * Synthesizing novel camera views for training
-* Training a Gaussian Splatting model for high-fidelity radiance field rendering
+* Training a Gaussian Splatting model for rendering
 
 This pipeline is inspired by the ExScene paper, which explores scene editing and rendering using Gaussian primitives.<br>
 <sub>(There is no code implementation of ExScene yet, but the paper provides a conceptual framework.)</sub>
