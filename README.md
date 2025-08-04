@@ -128,6 +128,7 @@ The pipeline is modular and serves as a foundation for tasks such as:
 * No scaling is applied when converting PLY to JSON to maintain consistency with depth maps.
 * SH (spherical harmonics) coefficients are initialized directly using PLY RGB values.
 * Current initialization supports faster training convergence and better visual fidelity.
+* https://antimatter15.com/splat/?url=https://raw.githubusercontent.com/Soham-Gaonkar/splat-host/main/gs_newroom2.splat
 
 ---
 
